@@ -16,3 +16,14 @@ Randomly creates data in mp4 format from the inside of the stream
 <b> ffplay udp://xxx.x.x.x:1234 </b> <br>
 Plays video by selecting one of the random content in the stream
 
+linux
+-------
+ulimit -n : İzin verilen açık dosya sayısını görmek için,varsayılan 1024
+ps -e | grep ffmpeg | wc -l : makinada toplam çalışan ffmpeg sayısını verir
+system ctl restart tomcat
+
+du -h /filename : dosyanın kapladığı alanı verir : 1 GB gibi
+df -h : detaylı olarak tüm server folderlarının kapladığı alanı verir.
+htop : detaylı makinede çalışan servislerin listesini verir
+tail -n1000 -f /opt/tomcat/logs/catalina.out
+
